@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="de">
+    <head>
+         <!-- comment -->
+        <title>Checkbox</title>
+        <!-- comment -->
+        <link rel="stylesheet" href="stylesheet.css"></link>
+        <!-- comment -->
+        <meta name="viewport" content="initial-scale=1"></meta>
+    <head>
+    <body>
+         <div class="header">
+            <img src="logo_big.png" alt="Logo" style="width:50%">
+            <p>Choose</p>
+         </div>
+         <form> 
+			<div class="topnav">
+				<a href="profile.html">Profile</a>
+				<a href="settings.html">New Election</a>
+				<a href="join.html">Join Election</a>
+				<a href="index.html" style="float:left">Home</a>
+			</div>
+			<div class="row">
+			<div class="leftcolumn">
+				<div class="card">
+					<h2>Choose</h2>
+					<script language="JavaScript">
+							var max=3;                                                         // maximale Anzahl gewählter Checkboxen
+							function check(boxnr)
+							{
+								var objekte_gewaehlt=0;                                          // Anzahl gewählter Checkboxen zurücksetzen
+								for(var i=0; i<document.formular.box.length; i++)                // alle Checkboxen durchgehen
+									if(document.formular.box[i].checked==true) objekte_gewaehlt++; // gewählte Checkboxen zählen
+								if(objekte_gewaehlt > max)                                       // wenn Anzahl gewählter Checkboxen zu hoch...
+								{
+									document.formular.box[boxnr].checked=false;                    // gerade gewählte Checkboxen zurücksetzen
+									alert("Es dürfen maximal "+max+" Objekte ausgewählt werden!"); // Hinweis ausgeben
+								}
+							}
+					</script>
+		
+					Wählen Sie mehrere Checkboxen aus. Wird dabei das Maximum überschritten,
+					so wird die letzte Auswahl rückgängig gemacht und ein Hinweis ausgegeben.
+					<br>
+					<form name="formular">
+						<input type="checkbox" name="box" value="Box a" onClick="check(0)">Box a<br>
+						<input type="checkbox" name="box" value="Box b" onClick="check(1)">Box b<br>
+						<input type="checkbox" name="box" value="Box c" onClick="check(2)">Box c<br>
+						<input type="checkbox" name="box" value="Box d" onClick="check(3)">Box d<br>
+						<input type="checkbox" name="box" value="Box e" onClick="check(4)">Box e<br>
+					</form>
+				</div>  
+			</div>
+			<div class="rightcolumn">
+				<div class="card">
+				  <h2>About Me</h2>
+				  <p>Alias: <outputText value=""/></p>
+				</div>
+			   
+			</div>
+			</div>
+		</form>
+    </body>
+	<div class="siteFooterBar">
+        <div class="content">
+		<img src="logo_small.png" alt="Logo" style="width:10%">
+                <div class="foot">2019 @ Blockchain Bachelorprojekt </div>
+        </div>
+    </div>
+	<script src="xyz.js" type="text/javascript"></script>
+</html>

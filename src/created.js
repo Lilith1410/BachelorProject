@@ -1,0 +1,1 @@
+document.getElementById("inviteCode").innerHTML = "Lorem Ipsum blarum";

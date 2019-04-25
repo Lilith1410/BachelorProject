@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="de">
+    <head>
+         <!-- comment -->
+        <title>Index</title>
+        <!-- comment -->
+        <link rel="stylesheet" href="stylesheet.css"></link>
+        <!-- comment -->
+        <meta name="viewport" content="initial-scale=1"></meta>
+    </head>
+    <body>
+		<div class="header">
+		<img src="logo_big.png" alt="Logo" style="width:50%">
+			<p>Uebersicht</p>
+		</div>
+		<form>			
+			<div class="topnav">
+				<a href="profile.html">Profile</a>
+				<a href="settings.html">New Election</a>
+				<a href="join.html">Join Election</a>
+				<a href="index.html" style="float:left">Home</a>
+			</div>
+			<div class="row">
+				<div class="leftcolumn">
+					<div class="card">
+						<h2>Tabelle</h2>
+						<form id="searchForm" action="">
+							<label>Elections:</label><br/>
+							<input id="searchInput" type="text" name="elections" value="search...">
+							<input id="searchButton" type="button" name="search" value="Search" onclick="search()">
+						</form>
+					 <div id="electionList">
+					</div>
+					</div>
+			   
+				</div>
+				<div class="rightcolumn">
+					<div class="card">
+						<h2>About Me</h2>
+						<p>Benutzername: <outputText value=""/></p>
+					</div>
+				</div>
+			</div>
+		</form>		
+    </body>
+	
+	<div class="siteFooterBar">
+        <div class="content">
+		<img src="logo_small.png" alt="Logo" style="width:10%">
+                <div class="foot">2019 @ Blockchain Bachelorprojekt </div>
+        </div>
+    </div>
+		
+   
+	<script src="index.js" type="text/javascript"></script>
+</html>

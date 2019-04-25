@@ -1,0 +1,69 @@
+﻿
+/*Überschirften h1 h2*/
+h1 {font-size: 30pt; color: white}
+h2 {font-size: 16pt; color: white:
+margin-left: auto;
+	margin-right: auto;}
+
+/* Header Hintergrund, Schriftfarbe und Abstand diffinieren*/
+header{
+    background:#003366;
+    color:white;
+    padding: 20px;
+    width:100%;
+}
+/* Fusszeile*/
+	footer{
+    background:#003366;color:white;
+    position:absolute;
+    bottom:0;
+    width:100%;
+    height:60px;}
+
+/*Dokumentkörper, Hintergrund, Abstände, Schrift, Position...*/
+body
+{
+	background: black;
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	color: #e8e8e8;
+	font-family: Arial, Helvetica;
+	text-align: center;
+
+   
+}
+
+
+/* Links*/
+a{
+    font-family: Arial, Helvetica;
+    font-size: 20pt;
+    color:white;
+}
+
+
+/* */
+form{
+   text-align:center;
+   padding: 2em;
+    
+}
+
+ul{
+    list-style-type:none;
+    text-align:center;
+margin-left: auto;
+	margin-right: auto;
+}
+
+li{
+   
+    
+    
+}
+
+* {
+    box-sizing: border-box;
+}
+

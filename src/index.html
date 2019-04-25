@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Electchain</title>
+    <link rel="stylesheet" href="stylesheet.css">
+  </head>
+  <body>
+    <div class="header">
+      <img src="logo_big.png" alt="Logo" style="width:50%"> 
+      <h1>Übersicht</h1>
+    </div>
+    <hr/>
+    <div class="topnav">
+        <a href="profile.html">Profile</a>
+				<a href="settings.html">New Election</a>
+				<a href="join.html">Join Election</a>
+				<a href="index.html" style="float:left">Home</a>
+    </div>
+    <hr/>
+    <div id="loader">
+      <p class="text-center"> Loading... </p>
+    </div>
+    <div id="content" style="display: none;">
+      <div class="row">
+				<div class="leftcolumn">
+					<div class="card">
+						<h2>Tabelle</h2>
+						<form id="searchForm" action="">
+							<label>Elections:</label><br/>
+							<input id="searchInput" type="text" name="elections" value="search...">
+							<input id="searchButton" type="button" name="search" value="Search" onclick="search()">
+						</form>
+					 <div id="electionList">
+					</div>
+					</div>
+			   
+				</div>
+				<div class="rightcolumn">
+					<div class="card">
+						<h2>About Me</h2>
+						<p>Benutzername: <outputText value=""/></p>
+					</div>
+				</div>
+      </div>
+      <hr\>
+    </div>
+
+
+    <div class="siteFooterBar">
+        <div class="content">
+		<img src="logo_small.png" alt="Logo" style="width:10%">
+                <div class="foot">2019 @ Blockchain Bachelorprojekt </div>
+        </div>
+    </div>
+
+    <p id="accountAddress" class="text-center"></p>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/web3.min.js"></script>
+    <script src="js/truffle-contract.js"></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>
+

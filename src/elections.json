@@ -1,0 +1,32 @@
+[
+  {
+    "id": 0,
+    "name": "Äpfel und Birnen",
+    "boolean": true
+  },
+  {
+    "id": 1,
+    "name": "Lieblingsfastfood",
+    "boolean": true
+  },
+  {
+    "id": 2,
+    "name": "Bürgermeister",
+    "boolean": true
+  },
+  {
+    "id": 3,
+    "name": "McD oder BK",
+    "boolean": true
+  }, 
+  {
+    "id": 4,
+    "name": "Hund/Katze",
+    "boolean": false
+  }, 
+  {
+    "id": 5,
+    "name": "12435 xyz",
+    "boolean": false
+  }
+]
